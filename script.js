@@ -1,12 +1,12 @@
 let p = new Promise((resolve, reject) => {
-  let a = 1 + 2;
+  let a = 1 + 1;
   if (a == 2) {
     resolve("Success");
   } else {
     reject("Failed");
   }
 });
-
+// message e ce returneaza rezolve/reject
 p.then((message) => {
   console.log("This is in the then " + message);
 }).catch((message) => {
